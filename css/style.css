@@ -8,5 +8,18 @@
 
 .header{
     background: red;
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
+.header_information{
+    background: green;
+    justify-content: start;
+}
+
+.header_login{
+    background: violet;
+    justify-content: end;
+}
