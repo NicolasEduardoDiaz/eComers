@@ -85,14 +85,16 @@
 
 .main_nav{
     /*background: violet;*/
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 .nav_ul{
-    background: darkgrey;
+    /*background: darkgrey;*/
+    height: 50px;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    align-items: center;
+    gap: 10px;
     overflow-x: scroll;
 }
 
@@ -101,10 +103,20 @@
 }
 
 .nav_ul li a{
-    background: orange;
-    width: 96px;
-    display: flex;
+    width: 105px;
+    height: 35px;
+    font-family: "EncondeSans-Medim";
+    /*background: orange;*/
     text-decoration: none;
+    display: flex;
     align-items: center;
     gap: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid var(--color-3);
+    color: var(--color-1);
+    background: var(--color-5);
+}
+.nav_ul li a:hover{
+    filter: invert(1);
 }
