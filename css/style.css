@@ -54,7 +54,7 @@
     border: 1px solid var(--color-3);
 }
 
-.search_icon{
+#search_icon{
     position: absolute;
     display: block;
     bottom: .6rem;
@@ -75,4 +75,36 @@
     position: absolute;
     inset: 0;
     margin: auto;
+}
+
+.main{
+    /*background: red;*/
+    padding: var(--space-layout-padding-lr);
+    margin-top: 15px;
+}
+
+.main_nav{
+    /*background: violet;*/
+    padding: 10px;
+}
+
+.nav_ul{
+    background: darkgrey;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    overflow-x: scroll;
+}
+
+.nav_ul li{
+    list-style: none;
+}
+
+.nav_ul li a{
+    background: orange;
+    width: 96px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 5px;
 }
