@@ -4,7 +4,7 @@
     --color-3: #A4AAAD;
     --color-4: #111111;
     --color-5: #FFFFFF;
-    --space-layout-paddin-lr: 0px 15px;
+    --space-layout-padding-lr: 15px;
     --space-layout-paddin-t: 5px; 
 }
 @font-face {
