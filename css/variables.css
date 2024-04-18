@@ -5,9 +5,9 @@
     --color-4: #111111;
     --color-5: #FFFFFF;
     --space-layout-padding-lr: 15px;
-    --space-layout-paddin-t: 5px; 
-    --layout-imagen-width:154px;
-    --layout-imagen-height:211px;
+    --space-layout-padding-t: 5px; 
+    --layout-imagen-width:100%;
+    --layout-imagen-height:350px;
     
 }
 @font-face {
