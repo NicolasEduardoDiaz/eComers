@@ -121,6 +121,61 @@
     filter: invert(1);
 }
 
+.main_article{
+    height: 70vh;
+    margin-top: 15px;
+    background: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+.main_article section{
+    display: flex;
+    justify-content: center;
+    background: green;
+    width: 48%;
+    height: 290px;
+    margin-bottom: 4%;
+}
+
+.section_front_page{
+    position: relative;
+    margin-top: 5px;
+    border-radius: 14px;
+    /*background: blue;*/
+    height: var(--layout-imagen-height);
+    width: var(--layout-imagen-width);
+    overflow: hidden;
+}
+
+.section_front_page img{
+    position: absolute;
+}
+
+.section_front_page img:first-child{
+    height: var(--layout-imagen-height);
+    width: var(--layout-imagen-width);
+    object-fit: cover;
+}
+
+.section_front_page img:last-child{
+    top: 10px;
+    right: 10px;
+}
+
+.main_article section:nth-child(4n+1),
+.main_article section:nth-child(4n+4){
+    background: orange;
+    height: 260px;
+}
+
+.main_article section:nth-child(4n-1){
+    background: violet;
+    margin-top: -30px;
+}
+
 .footer{
     /*background: red;*/
     position: fixed;
