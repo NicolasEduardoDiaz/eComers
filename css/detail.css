@@ -5,3 +5,45 @@
     font-family: "EncodeSans-Regular";
     box-sizing: border-box;
 }
+
+.main{
+    /*background: red;*/
+    padding: var(--space-layout-padding-lr);
+    margin-top: var(--space-layout-padding-t);
+}
+
+.main_section{
+    width: 100%;
+    /*background: green;*/
+}
+
+.article_product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.product_image{
+    /*background: blue;*/
+    width: var(--layout-imagen-width-detail);
+    height: var(--layout-imagen-height-detail);
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product_image img{
+    width: var(--layout-imagen-width-detail);
+    height: var(--layout-imagen-height-detail);
+    object-fit: cover;
+}
+
+.product_menu{
+    /*background: violet;*/
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px 0 15px;
+}
