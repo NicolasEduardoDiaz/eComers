@@ -152,7 +152,7 @@
 .section__front_page img{
     position: absolute;
 }
-.section__front_page img:first-child{
+.section__front_page a img:first-child{
     width: var(--layout-imagen-width);
     height: var(--layout-imagen-height);
     object-fit: cover;
@@ -203,33 +203,6 @@
     /* background: violet; */
     margin-top: -54px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer{
     /* background: red; */
     position: fixed;
@@ -245,7 +218,7 @@
     justify-content: space-evenly;
     align-items: center;
     border-radius: 40px;
-    box-shadow: 0px 0px 55px 10px #fff; 
+    box-shadow: 0px 0px 55px 10px #fff;
 }
 .footer__ul li{
     list-style: none;
@@ -260,7 +233,6 @@
 .footer__ul li a{
     display: flex;
 }
-
 .footer__ul li a img{
     object-fit: contain;
 }
