@@ -1,25 +1,41 @@
-export const galleryindex = (res) => {
+export const galleryindex = (res, category) => {
     let {products} = res.data
     let plantilla = "";
-    products.forEach((vale, index) => {
+    products.forEach((value, index) => {
         plantilla +=  /*html*/
         `<section>
                 <div class="section__front_page">
-                    <a href="views/detail.html">
-                        <img src="storage/img/img3.png">
+                    <a href="views/detail.html?id=${value.asin}">
+                        <img src="${value.products_photo}">
                     </a>
                     <img src="storage/img/heart.svg">
                 </div>
-                <h5>Modern light clothes</h5>
-                <small>Dress modern</small>
+                <h5>${value.product_title}</h5>
+                <small>${category}</small>
                 <div class="section__price">
-                    <span>$212.99</span>
+                    <span>${value.product_price}</span>
                     <div  class="price__score">
                         <img src="storage/img/star.svg">
-                        <p>5.0</p>
+                        <p>${(value.product_star_rating!=null) ? value.product_star_rating: 0}</p>
                     </div>
                 </div>
-            </section>`
-    })
+            </section>
+            `;
+    });
     return plantilla
 };
+
+export const galleryCategory = ({data: {products_photo}} = res) => {
+    return /*html*/
+    `<article class="article_product">
+        <div class="product_image">
+            ${products_photo.map(value => `<div class="product_image_item"><img src"${value}"></div>`).join('')}
+        </div>
+        <div class="product_menu">
+            <a href="../?id='fashion'">
+                <img src="../storage/img/back.svg">
+            </a>
+            <img src="../storage/img/heartBlack.svg">
+        </div>
+    </article>`
+}
