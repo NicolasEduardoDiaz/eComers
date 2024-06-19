@@ -29,13 +29,13 @@ export const galleryCategory = ({data: {products_photo}} = res) => {
     return /*html*/
     `<article class="article_product">
         <div class="product_image">
-            ${products_photo.map(value => `<div class="product_image_item"><img src"${value}"></div>`).join('')}
+            ${products_photo.map(value => `<div class="product_image_item"><img src="${value}"></div>`).join('')}
         </div>
         <div class="product_menu">
             <a href="../?id='fashion'">
                 <img src="../storage/img/back.svg">
             </a>
-            <img src="../storage/img/heartBlack.svg">
+                <img src="../storage/img/heartBlack.svg">
         </div>
-    </article>`
+    </article>`;
 }
