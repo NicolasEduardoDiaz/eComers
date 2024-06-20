@@ -1,9 +1,9 @@
 import { headers } from "../components/env.js";
 
-export const getProductId = async({id:idCategory}) => {
-    console.log("Esperando ........");
+export const getProductId = async({id:idCategory})=>{
+    console.log("Esperando .......");
     const url = `https://real-time-amazon-data.p.rapidapi.com/product-details?asin=${idCategory}&country=US`;
-    const options ={
+    const options = {
         method: 'GET',
         headers
     };

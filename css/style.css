@@ -17,8 +17,12 @@
 .header__information{
     /* background: green; */
 }
+.header__information p{
+    color: var(--color-2);
+}
 .header__information span{
     font-family: "EncodeSans-Bold";
+    color: var(--color-2);
 }
 .header__login{
     /* background: violet; */
@@ -52,6 +56,7 @@
     padding-left: 2.5rem;
     padding-right: 1.5rem;
     border: 1px solid var(--color-3);
+    color: var(--color-3);
 }
 .search__icon{
     position: absolute;
@@ -96,28 +101,32 @@
     list-style: none;
 }
 .nav__ul li a{
-    width: 105px;
+    width: 125px;
     height: 35px;
     font-family: "EncodeSans-Medium";
     /* background: orange; */
     text-decoration: none;
     display: flex;
     align-items: center;
+    
     gap: 5px;
     padding: 5px;
     border-radius: 8px;
     border: 1px solid var(--color-3);
+    
     color: var(--color-1);
     background: var(--color-5);
-    /*animacion*/
-    transition: all 0.5s linear;
 }
 
 .nav__ul li a:hover{
     filter: invert(1);
     
 }
-
+.nav__ul li a span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 
 
@@ -158,7 +167,7 @@
 .section__front_page a img:first-child{
     width: var(--layout-imagen-width);
     height: var(--layout-imagen-height);
-    object-fit: cover;
+    object-fit: scale-down;
 }
 .section__front_page > img:last-child{
     top: 10px;
